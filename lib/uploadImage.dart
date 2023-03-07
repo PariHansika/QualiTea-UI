@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'dart:convert';
-import 'package:http/http.dart' as http;
-import 'package:image_picker/image_picker.dart';
+// import 'package:http/http.dart' as http;
+// import 'package:image_picker/image_picker.dart';
 
 class uploadImage extends StatefulWidget {
   uploadImage() : super();
@@ -15,13 +15,13 @@ class uploadImage extends StatefulWidget {
 
 class uploadImageDemo extends State<uploadImage> {
 
-  Future<File> file;
+  Future<File>? file;
   String status = '';
 
   ChooseImage() {
-    setState(() {
-      file = ImagePicker.pickImage(source : ImageSource.gallery);
-    });
+    // setState(() {
+    //   file = ImagePicker.pickImage(source : ImageSource.gallery);
+    // });
     
   }
 
